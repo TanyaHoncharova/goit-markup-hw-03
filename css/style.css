@@ -24,13 +24,45 @@ body {
     
 }
 
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .list,
 .nav-item {
     list-style: none;
     text-decoration: none;
 }
 
+.header-box,
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-list .item + .item {
+    margin-left: 50px;
+}
 .nav-item  {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;    
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14; 
@@ -41,14 +73,36 @@ body {
 .nav-item:focus {
     color: var(--accent-color);
 }
+
 .curent {
     color: var(--accent-color);
 }
-.address-menu a {
+
+.address {
+ display: flex;
+ margin-left: auto;
+}
+
+.address .item:not(:last-child){
+    margin-right: 50px;
+}
+
+.address-item:hover,
+.address-item:focus {
+    color: var(--accent-color);
+}
+
+
+.address a {
+     
     color: var(--primari-text-color);
 }
 
 .hero {
+    display: block;
+    text-align: center;
+    justify-items: center;
+
     background-color: var(--black-color);
     color: var(--white-color);
 }
@@ -62,6 +116,7 @@ body {
 }
 
 .hero-btm {
+
     font: roboto;
     background-color: var(--accent-color);
     color: var(--white-color);
@@ -69,8 +124,6 @@ body {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
-
-
 }
 .hero .btm:hover,
 .hero .btm:focus,
@@ -86,9 +139,39 @@ body {
     /*добавить позионирование кнопки*/
 
 }
-.none-display {
-    display: none;
+
+.container {
+    display: flex;
+    padding-bottom: 94px;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    justify-content: center;
+    margin: 0 auto;
 }
+
+
+/* Оссобености */
+.advantages {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 94px;
+}
+
+
+.advantages-list {
+display: flex;
+justify-content: space-around;
+}
+
+.advantages-list li:not(:last-child) {
+   margin-right: 30px;
+}
+.advantages-item {
+    display: block;
+ }
+
+
 .advantages-item h3 {
     font-weight: 700;
     font-size: 14px;
@@ -96,32 +179,111 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
+    margin: 0;
+    margin-bottom: 10px;
 }
 .advantages-item p {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
-    letter-spacing: 0.03em;    
+    letter-spacing: 0.03em;  
+    margin: 0;
+
 }
+
+/* чем ьы занимаемся */
+
 .section-h {
     font-weight: 700;
     font-size: 36px;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
     line-height: 1.167;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-.team-item h3 {
+
+.about-list {
+    display: flex;
+}
+.about-list .item:not(:last-child){
+    margin-right: 30px;
+
+}
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-list {
+    display:flex;
+    }
+
+.team-card {
+    margin-right: 30px;
+background-color: var(--white-color);
+  border-bottom:1px solid transparent;
+  border-left:1px solid transparent;
+  border-right: 1px solid transparent;
+  border-radius: 5px;
+  /* добавить тень внизу карточки */
+    }
+
+
+/* .section-h {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.187;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin: 0%;
+    width: 270px;
+    
+    } */
+
+
+.card-des>h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin:0;
+    text-align: center;
+}
+.card-des p {
+    font-size: 16px;
+    line-height: 1.1875;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primari-text-color);
 }
 
+
+.card-des {
+    border-right: 1px solid 3 transparent
+}
+
+/* футер */
 footer {
      background-color: var(--black-color);
 }
+.content {
+    display:flex;
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+.logo-addres {
+   display:block;
+   padding-top:50px;
+
+}
 .logo-link {
+    display:block;
+    margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -138,6 +300,7 @@ footer {
     line-height: 1.174;
     letter-spacing: 0.03em;
     color: var(--white-color);
+    padding-bottom: 60px;
    }
 .address-item {
     font-weight: 400;
@@ -146,6 +309,14 @@ footer {
     letter-spacing: 0.03em;
     color: var(--footer-w-color);
     }
+
+.join {
+    display: block;
+}  
+
+.form {
+      display: block;
+}
     /* страница портфолио */
 
 .filter {
