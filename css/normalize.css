@@ -15,6 +15,13 @@ Use a better box model (opinionated).
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+p {
+    padding:0;
+    margin:0;
+}
 /**
 Use a more readable tab size (opinionated).
 */

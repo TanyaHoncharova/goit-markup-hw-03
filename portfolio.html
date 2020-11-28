@@ -16,109 +16,111 @@
                 <img src="./images/WebStudio.svg" alt="логотип">
             </a>
             <ul class="nav-list list">
-                <li><a class="nav-item list" href="./index.html">Студия</a></li>
-                <li><a class="nav-item list curent" href="./index.html">Портфолио</a></li>
-                <li><a class="nav-item list" href="">Контакты</a></li>
+                <li class="item"><a class="nav-item list" href="./index.html">Студия</a></li>
+                <li class="item"><a class="nav-item list curent" href="./index.html">Портфолио</a></li>
+                <li class="item"><a class="nav-item list" href="">Контакты</a></li>
             </ul>
         </nav>
         <address>
-            <ul class="address-menu list">
-                <li> <a class="nav-item list" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+            <ul class="address list">
+                <li class="item"> <a class="nav-item list" href="mailto:info@devstudio.com"> info@devstudio.com </a>
                 </li>
-                <li> <a class="nav-item list" href="tel:+380961111111"> +38 096 111 11 11 </a></li>
+                <li class="item"> <a class="nav-item list" href="tel:+380961111111"> +38 096 111 11 11 </a></li>
             </ul>
         </address>
 
     </header>
     <main>
-        <section>
+        <section class="portfolio">
 
-            <h2 class="none-display">Портфолио</h2>
+            <h2 class="visually-hidden">Портфолио</h2>
             <!--filter-->
             <ul class="filter list">
-                <li>
-                    <a class="filter btm anchor list" href="#">Все</a> </li>
-                <li>
-                    <a class="filter btm anchor list" href="#">Веб-сайты</a></li>
-                <li>
-                    <a class="filter btm anchor list" href="#">Приложения</a></li>
-                <li>
-                    <a class="filter btm anchor list" href="#">Дизайн</a></li>
-                <li>
-                    <a class="filter btm anchor list" href="#">Маркетинг</a></li>
+                <li class="filter-btm">
+                    <a class="btm anchor list" href="#">Все</a> </li>
+                <li class="filter-btm">
+                    <a class="btm anchor list" href="#">Веб-сайты</a></li>
+                <li class="filter-btm">
+                    <a class="btm anchor list" href="#">Приложения</a></li>
+                <li class="filter-btm">
+                    <a class="btm anchor list" href="#">Дизайн</a></li>
+                <li class="filter-btm">
+                    <a class="btm anchor list" href="#">Маркетинг</a></li>
             </ul>
-            <!--cards-->
-            <ul class="examples list">
-                <li class="examples-card ">
-                    <img src="./images/texnokryak.jpg" alt="сайт Технокряк">
-                    <h3>Технокряк</h3>
-                    <a class="card-link list" href="#">
-                        <p>Веб-сайт</p>
-                    </a>
-                </li>
-                <li class="examples-card">
-                    <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star">
-                    <h3>Постер New Orlean vs Golden Star</h3>
-                    <a class="card-link list" href="#">
-                        <p>Дизайн</p>
-                    </a>
+            <div class="cards">
+                <!--cards-->
+                <ul class="examples list">
+                    <li class="examples-card ">
+                        <img class="examples-img" src="./images/texnokryak.jpg" alt="сайт Технокряк">
+                        <h3>Технокряк</h3>
+                        <a class="card-link list" href="#">
+                            <p>Веб-сайт</p>
+                        </a>
+                    </li>
+                    <li class="examples-card">
+                        <img class="examples-img" src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star">
+                        <h3>Постер New Orlean vs Golden Star</h3>
+                        <a class="card-link list" href="#">
+                            <p>Дизайн</p>
+                        </a>
 
-                </li>
-                <li class="examples-card">
-                    <img src="./images/seafood.jpg" alt="Ресторан Seafood">
-                    <h3>Ресторан Seafood</h3>
-                    <!-- если будет сылка на приложение -->
-                    <a class="card-link list" href="#">
-                        <p>Приложение</p>
-                    </a>
-                </li>
-                <li class="examples-card">
-                    <img src="./images/prime.jpg" alt="Проект Prime">
-                    <h3>Проект Prime</h3>
-                    <a class="card-link list" href="#">
-                        <p>Маркетинг</p>
-                    </a>
+                    </li>
+                    <li class="examples-card">
+                        <img class="examples-img" src="./images/seafood.jpg" alt="Ресторан Seafood">
+                        <h3>Ресторан Seafood</h3>
+                        <!-- если будет сылка на приложение -->
+                        <a class="card-link list" href="#">
+                            <p>Приложение</p>
+                        </a>
+                    </li>
+                    <li class="examples-card">
+                        <img class="examples-img" src="./images/prime.jpg" alt="Проект Prime">
+                        <h3>Проект Prime</h3>
+                        <a class="card-link list" href="#">
+                            <p>Маркетинг</p>
+                        </a>
 
-                </li>
-                <li class="examples-card">
-                    <img src="./images/boxes.jpg" alt="Проект Boxes">
-                    <h3>Проект Boxes</h3>
-                    <a class="card-link list" href="#">
-                        <p>Приложение</p>
-                    </a>
-                </li>
-                <li class="examples-card">
-                    <img src="./images/inspiration.jpg" alt="Inspiration has no Borders">
-                    <h3>Inspiration has no Borders</h3>
-                    <a class="card-link list" href="#">
-                        <p>Веб-сайт</p>
-                    </a>
-                </li>
-                <li class="examples-card">
-                    <img src="./images/limited.jpg" alt="Издание Limited Edition">
-                    <h3>Издание Limited Edition</h3>
-                    <a class="card-link list" href="#">
-                        <p>Дизайн</p>
-                    </a>
+                    </li>
+                    <li class="examples-card">
+                        <img class="examples-img" src="./images/boxes.jpg" alt="Проект Boxes">
+                        <h3>Проект Boxes</h3>
+                        <a class="card-link list" href="#">
+                            <p>Приложение</p>
+                        </a>
+                    </li>
+                    <li class="examples-card">
+                        <img class="examples-img" src="./images/inspiration.jpg" alt="Inspiration has no Borders">
+                        <h3>Inspiration has no Borders</h3>
+                        <a class="card-link list" href="#">
+                            <p>Веб-сайт</p>
+                        </a>
+                    </li>
+                    <li class="examples-card">
+                        <img class="examples-img" src="./images/limited.jpg" alt="Издание Limited Edition">
+                        <h3>Издание Limited Edition</h3>
+                        <a class="card-link list" href="#">
+                            <p>Дизайн</p>
+                        </a>
 
-                </li>
-                <li class="examples-card">
-                    <img src="./images/lab.jpg" alt="Проект LAB">
-                    <h3>Проект LAB</h3>
-                    <a class="card-link list" href="#">
-                        <p>Маркетинг</p>
-                    </a>
+                    </li>
+                    <li class="examples-card">
+                        <img class="examples-img" src="./images/lab.jpg" alt="Проект LAB">
+                        <h3>Проект LAB</h3>
+                        <a class="card-link list" href="#">
+                            <p>Маркетинг</p>
+                        </a>
 
-                </li>
-                <li class="examples-card">
-                    <img src="./images/growing.jpg" alt="Growing Business">
-                    <h3>Growing Business</h3>
-                    <a class="card-link list" href="#">
-                        <p>Приложение</p>
-                    </a>
+                    </li>
+                    <li class="examples-card">
+                        <img class="examples-img" src="./images/growing.jpg" alt="Growing Business">
+                        <h3>Growing Business</h3>
+                        <a class="card-link list" href="#">
+                            <p>Приложение</p>
+                        </a>
 
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </section>
 
     </main>
