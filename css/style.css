@@ -108,9 +108,10 @@ body {
     justify-items: center;
     padding-top: 200px;
     padding-bottom: 200px;
-
-
-
+    /* display: flex;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px; */
     background-color: var(--black-color);
     color: var(--white-color);
 }
